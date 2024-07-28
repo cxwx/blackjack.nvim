@@ -29,6 +29,19 @@ https://user-images.githubusercontent.com/3660978/221390688-2c53d1e3-74b5-4f00-8
 
 ## Installation
 
+### Using [Lazy](https://github.com/folke/lazy.nvim)
+
+```lua
+  {
+    "alanfortlink/blackjack.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      scores_path = vim.fn.expand("~/org/blackjack_scores.json"),
+    },
+    cmd = {"BlackJackNewGame", "BlackJackQuit", "BlackJackResetScores"},
+  },
+```
+
 ### Using [Packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
